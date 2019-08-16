@@ -46,7 +46,7 @@ function display() {
         var name = songInfo[i].name;
         var url = songInfo[i].preview_url;
         var artist = songInfo[i].artists[0].name;
-        console.log("\nSong Title: " + name + "\nArtist(s) Name: " + artist + "\nAlbum Name: " + album + "\nPreview Url: " + url + "\n___________");
+        console.log(`\nSong Title:  ${name}  \nArtist(s) Name:  ${artist}  \nAlbum Name:  ${album}  \nPreview Url:  ${url}` + "\n___________");
       };
     });
   } else if (process.argv[2] === "movie-this") //Type of search user wants
