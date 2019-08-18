@@ -79,10 +79,28 @@ function display() {
   } else if (process.argv[2] === "do-what-it-says") {
     //What is says Call
 
-    console.log("work in progress");
+    var fs = require("fs");
+
+    fs.readFile("random.txt", "utf8", function(err, data){
+      //Pulls data from the random.txt file. That file is a utf8 file, and has a function for either an error, or the data it brings back
+      if (err) {
+        console.log(err);
+      }
+
+      else{
+        console.log(data);
+      }
+
+
+
+    })
+
+   
 
 
   };
+
+  
 
 
 
