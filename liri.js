@@ -2,8 +2,6 @@ require("dotenv").config();
 
 var axios = require('axios');
 
-var movieInput = process.argv[3];
-
 function display() {
   //Concert Call
   if (process.argv[2] === "concert-this") {
@@ -51,6 +49,7 @@ function display() {
     });
   } else if (process.argv[2] === "movie-this") //Type of search user wants
   {   //Movie Call
+    var movieInput = process.argv[3];
     axios.get("http://www.omdbapi.com/?t=" + movieInput + "&y=&plot=short&apikey=trilogy").then(
       function (response) {
         // * Title of the movie.
@@ -89,8 +88,10 @@ function display() {
 
       else{
         console.log(data);
+        // var testRequest = data;
       }
 
+      //Need to feed the data into the search parameters for the index[2] and index[3] arguments.
 
 
     })
