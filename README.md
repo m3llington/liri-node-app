@@ -9,3 +9,5 @@ Intstructions for app:
 2.) Choose between the options "concert-this", "spotify-this", or "movie-this" depending on wether you want to search for a concert, song, or movie respectively.
 3.) After typing in the type of search you wanted specify the name of whatever concert, song, or movie you want to find.
 4.) Ta-da after the api call finds a response, it then loops through the object if necessary and displays() the the requested information in terminal.
+
+Screen shots are availible to see what this application does without the need to clone it
